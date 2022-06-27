@@ -1,0 +1,87 @@
+body {
+  background-color: #E5E5FF;
+}
+
+.button {
+  background-color: #7f7fff;
+}
+.button:active, .button:focus, .button:hover {
+  background-color: #6C6CD8;
+}
+
+.status {
+  border-color: #E5E5FF;
+}
+
+a.status-card,
+a.status-card.compact {
+  border-color: #7f7fff;
+  color: #252525;
+}
+a.status-card .status-card__image,
+a.status-card.compact .status-card__image {
+  background-color: #E5E5FF;
+}
+a.status-card:hover,
+a.status-card.compact:hover {
+  background: #E5E5FF;
+}
+
+.compose-form .compose-form__warning,
+.compose-form .compose-form__warning a,
+.reply-indicator__content a,
+.status__content a,
+.reply-indicator__content a.unhandled-link,
+.status__content a.unhandled-link {
+  color: #7f7fff;
+}
+
+.public-layout .header {
+  background-color: #7f7fff;
+}
+.public-layout .header .brand svg {
+  fill: white;
+}
+.public-layout .header .brand:active, .public-layout .header .brand:focus, .public-layout .header .brand:hover {
+  background-color: #6C6CD8;
+}
+.public-layout .header .nav-link {
+  color: white;
+}
+.public-layout .header .nav-link:active, .public-layout .header .nav-link:focus, .public-layout .header .nav-link:hover {
+  color: white;
+}
+.public-layout .header .nav-button {
+  background-color: #6C6CD8;
+}
+.public-layout .header .nav-button:hover {
+  background: #6C6CD8 !important;
+  opacity: 0.8 !important;
+}
+
+body.app-body.theme-mastodon-light {
+  position: relative;
+}
+body.app-body.theme-mastodon-light::after {
+  position: fixed;
+  content: "";
+  right: 0;
+  bottom: 0;
+  display: block;
+  height: 300px;
+  width: 300px;
+  background-image: url(https://s3-media.hostdon.ne.jp/sgm85/site_uploads/files/000/000/001/original/%EF%BD%B1%EF%BD%B2%EF%BD%BA%EF%BD%AE%EF%BE%9D2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+body.app-body.theme-mastodon-light .tabs-bar__wrapper {
+  background: none;
+}
+body.app-body.theme-mastodon-light .column-link--transparent.active {
+  color: #7f7fff;
+}
+body.app-body.theme-mastodon-light .navigation-panel a[data-preview-title-id="explore.title"],
+body.app-body.theme-mastodon-light .navigation-panel a[data-preview-title-id="column.community"] {
+  display: none;
+}

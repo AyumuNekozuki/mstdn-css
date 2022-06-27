@@ -1,0 +1,107 @@
+body{
+  background-color: #E5E5FF;
+}
+
+// 共通パーツ
+.button{
+  background-color: #7f7fff;
+
+  &:active,
+  &:focus,
+  &:hover{
+    background-color: #6C6CD8;
+  }
+}
+.status{
+  border-color: #E5E5FF;
+}
+a.status-card,
+a.status-card.compact{
+  border-color: #7f7fff;
+  color: #252525;
+
+  .status-card__image{
+    background-color: #E5E5FF;
+  }
+
+  &:hover{
+    background: #E5E5FF;
+  }
+}
+
+.compose-form .compose-form__warning,
+.compose-form .compose-form__warning a,
+.reply-indicator__content a,
+.status__content a,
+.reply-indicator__content a.unhandled-link,
+.status__content a.unhandled-link{
+  color: #7f7fff;
+}
+
+
+
+// public
+.public-layout{
+  .header{
+    background-color: #7f7fff;
+
+    .brand{
+      svg{
+        fill: white;
+      }
+
+      &:active,
+      &:focus,
+      &:hover{
+        background-color: #6C6CD8;
+      }
+    }
+    .nav-link{
+      color: white;
+      &:active,
+      &:focus,
+      &:hover{
+        color: white;
+      }
+    }
+    .nav-button{
+      background-color: #6C6CD8;
+      &:hover{
+        background: #6C6CD8 !important;
+        opacity: .8 !important;
+      }
+    }
+  }
+}
+
+// 内部
+body.app-body.theme-mastodon-light{
+  position: relative;
+
+  &::after{
+    position: fixed;
+    content: '';
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 300px;
+    width: 300px;
+    background-image: url(https://s3-media.hostdon.ne.jp/sgm85/site_uploads/files/000/000/001/original/%EF%BD%B1%EF%BD%B2%EF%BD%BA%EF%BD%AE%EF%BE%9D2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+  }
+
+  .tabs-bar__wrapper{
+    background: none;
+  }
+  .column-link--transparent.active{
+    color: #7f7fff;
+  }
+  .navigation-panel{
+    a[data-preview-title-id="explore.title"],
+    a[data-preview-title-id="column.community"]{
+      display: none;
+    }
+  }
+}
