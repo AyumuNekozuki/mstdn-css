@@ -1,0 +1,157 @@
+body{
+  background-color: #E5E5FF;
+}
+
+/* 共通 */
+.button{
+  background-color: #7f7fff;
+}
+.button:active, .button:focus, .button:hover{
+  background-color: #6C6CD8;
+}
+
+
+/* 外部 */
+/* .public-layout .header{
+  background-color: #7f7fff;
+}
+.public-layout .header .nav-link{
+  color: white;
+}
+.public-layout .header .brand:active, .public-layout .header .brand:focus, .public-layout .header .brand:hover{
+  background: #6C6CD8;
+}
+.public-layout .header .nav-button{
+  background: #6C6CD8;
+}
+.public-layout .header .nav-button:hover{
+  background: #6C6CD8 !important;
+  opacity: .8 !important;
+}
+.public-layout .public-account-header__bar:before{
+  background-color: #7f7fff;
+}
+.public-layout .public-account-header__bar .avatar img{
+  border-color: #7f7fff;
+  background: #7f7fff;
+}
+.public-layout .public-account-header__tabs__tabs .counter{
+  color: white;
+  border-right-color: #6C6CD8;
+}
+.public-layout .public-account-header__tabs__tabs .counter:after{
+  border-bottom-color: #6C6CD8;
+}
+.public-layout .public-account-bio{
+  background-color: #7f7fff;
+}
+.public-layout .account-role.admin,
+.public-layout .simple_form .recommended.admin{
+  background: white;
+  border-color: #e87487;
+}
+.public-layout .public-account-bio .roles, .public-layout .public-account-bio__extra{
+  color: white;
+}
+.public-layout .hero-widget__text{
+  background-color: #7f7fff;
+  color: white;
+}
+.public-layout .account__section-headline,
+.public-layout .notification__filter-bar{
+  background-color: #7f7fff;
+  border-bottom-color: #6C6CD8;
+}
+.public-layout .account__section-headline a,
+.public-layout .account__section-headline button,
+.public-layout .notification__filter-bar a,
+.public-layout .notification__filter-bar button{
+  color: white;
+}
+
+.public-layout .activity-stream .entry{
+  background: white;
+}
+.public-layout .status{
+  border-bottom-color: #c4c4c4;
+}
+.public-layout .account__display-name strong,
+.public-layout .status__display-name strong{
+  color: black;
+}
+.public-layout .reply-indicator__content,
+.public-layout .status__content{
+  color: black;
+}
+.public-layout .reply-indicator__content a,
+.public-layout .status__content a{
+  color: #7f7fff;
+}
+
+.public-layout .status-card{
+  border-color: #6C6CD8;
+  color: #252525;
+}
+.public-layout .status-card__title{
+  color: #252525;
+}
+.public-layout .status-card__description{
+  color: #555;
+}
+.public-layout a.status-card:hover{
+  background-color: #E5E5FF;
+}
+
+.public-layout .account__section-headline a.active:after,
+.public-layout .account__section-headline button.active:after, 
+.public-layout .notification__filter-bar a.active:after, 
+.public-layout .notification__filter-bar button.active:after{
+  border-color: transparent transparent #6C6CD8;
+}
+.public-layout .account__section-headline a.active:after, 
+.public-layout .account__section-headline a.active:before, 
+.public-layout .account__section-headline button.active:after, 
+.public-layout .account__section-headline button.active:before, 
+.public-layout .notification__filter-bar a.active:after, 
+.public-layout .notification__filter-bar a.active:before, 
+.public-layout .notification__filter-bar button.active:after, 
+.public-layout .notification__filter-bar button.active:before{
+  border-color: transparent transparent #6C6CD8;
+}
+
+.public-layout .nothing-here{
+  background: white;
+} */
+
+
+/* 内部 */
+.tabs-bar__wrapper{
+  background: none;
+}
+.column-link--transparent.active{
+  color: #7f7fff;
+}
+
+body.app-body.theme-mastodon-light{
+  position: relative;
+}
+
+.navigation-panel a[data-preview-title-id="explore.title"],
+.navigation-panel a[data-preview-title-id="column.community"]{
+  display: none;
+}
+
+
+body.app-body.theme-mastodon-light::after{
+  position: fixed;
+  content: '';
+  right: 0;
+  bottom: 0;
+  display: block;
+  height: 300px;
+  width: 300px;
+  background-image: url(https://s3-media.hostdon.ne.jp/sgm85/site_uploads/files/000/000/001/original/%EF%BD%B1%EF%BD%B2%EF%BD%BA%EF%BD%AE%EF%BE%9D2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
