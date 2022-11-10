@@ -1,32 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+
 body{
-  background-color: #E5E5FF;
+  background-color: #F0F8F1;
 }
 
 // 共通パーツ
 .button{
-  background-color: #7f7fff;
+  background-color: #66AD6F;
 
   &:active,
   &:focus,
   &:hover{
-    background-color: #6C6CD8;
+    background-color: #66AD6F;
   }
+
+	&.logo-button{
+		background-color: #66AD6F;
+	}
 }
 .status{
-  border-color: #E5E5FF;
+  border-color: #F0F8F1;
 }
 a.status-card,
 a.status-card.compact{
-  border-color: #7f7fff;
+  flex-direction: column;
+  border-color: #66AD6F;
   color: #252525;
 
   .status-card__image{
-    background-color: #E5E5FF;
+    background-color: #F0F8F1;
+		aspect-ratio: 16 / 9;
+		border-radius: 4px;
   }
 
   &:hover{
-    background: #E5E5FF;
+    background: #F0F8F1;
   }
+}
+
+.public-layout .public-account-header__tabs__name h1{
+	text-shadow: none;
 }
 
 .compose-form .compose-form__warning,
@@ -35,7 +49,7 @@ a.status-card.compact{
 .status__content a,
 .reply-indicator__content a.unhandled-link,
 .status__content a.unhandled-link{
-  color: #7f7fff;
+  color: #66AD6F;
 }
 
 
@@ -43,7 +57,7 @@ a.status-card.compact{
 // public
 .public-layout{
   .header{
-    background-color: #7f7fff;
+    background-color: #66AD6F;
 
     .brand{
       svg{
@@ -53,7 +67,7 @@ a.status-card.compact{
       &:active,
       &:focus,
       &:hover{
-        background-color: #6C6CD8;
+        background-color: #66AD6F;
       }
     }
     .nav-link{
@@ -65,14 +79,52 @@ a.status-card.compact{
       }
     }
     .nav-button{
-      background-color: #6C6CD8;
+      background-color: #66AD6F;
       &:hover{
-        background: #6C6CD8 !important;
+        background: #66AD6F !important;
         opacity: .8 !important;
       }
     }
   }
+
+	.public-account-header{
+		&__tabs{
+			&__name{
+				h1, h1 small{
+					color: #66AD6F;
+					font-weight: 700;
+					font-family: 'M PLUS Rounded 1c', sans-serif;
+				}
+			}
+
+			&__tabs{
+				.counter{
+					&::after{
+						border-color: #66ad6fbb;
+					}
+
+					&.active{
+						&::after{
+							border-color: #66AD6F;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.footer{
+		&::after{
+			content: 'Hosted by Hostdon';
+			width: 100%;
+			text-align: center;
+			display: block;
+			margin-top: 2rem;
+		}
+	}
 }
+
+
 
 // 内部
 body.app-body.theme-mastodon-light{
@@ -96,7 +148,7 @@ body.app-body.theme-mastodon-light{
     background: none;
   }
   .column-link--transparent.active{
-    color: #7f7fff;
+    color: #66AD6F;
   }
   .navigation-panel{
     a[data-preview-title-id="explore.title"],
